@@ -2,7 +2,7 @@ const electron = require('electron')
 
 const {app, BrowserWindow} = electron
 
-let mainWindow
+let mainWindow = null
 app.on('ready', _ => {
     mainWindow = new BrowserWindow({
         height: 725,
